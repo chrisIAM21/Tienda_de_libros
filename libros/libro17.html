@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <div><br> <br><br> <br></div>
+    <h1 class="text-center text-uppercase"><strong><a href="../index.html"><img src="../imagenes/logo-02.png" width="120" height="91" alt="" class=""></a><a href="../index.html">Tienda de Libros</a></strong></h1>
+    <title>1984</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <link rel="image_src" href="../imagenes/libro1/978607746791.jpg" />
+    <meta property="og:type" content="product"/>
+    <meta property="og:image" content="../imagenes/libro1/978607746791.jpg"/>
+    <meta property="og:url" content="libro\psicoanalista.html"/>
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="libro\psicoanalista.html" />
+
+    <link rel="stylesheet" type="text/css" href="../css/font/font-awesome.css" />
+    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery.ui.dialog.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-labelauty.css" />
+    <link rel="stylesheet" type="text/css" href="../css/lightslider.css" />
+    <link rel="stylesheet" type="text/css" href="../css/rawline.css" />
+    <link rel="stylesheet" type="text/css" href="../css/maineccb.css?3" />
+    <link rel="stylesheet" type="text/css" href="../css/colegios.css" />
+    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../lightbox/css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="../js/typeahead/typeahead.css" />
+    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
+
+    <script type="text/javascript" src="../js/instafeed.min.js"></script>
+    <script type="text/javascript" src="../js/funciones.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+
+    <!-- Agregamos la librería jQuery (Importante)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Agregamos la librería Simple Cart (recuerda apuntar a la librería Simple Cart)-->
+    <script src="js/simpleCart.min.js"></script>
+    <!-- Código JS de inicialización  -->
+    <script>
+
+        $(document).ready(function($) {
+            /* Función jQuery para el evento clic en la etiqueta "x" con la clase (.carrito-total)*/
+            $('.carrito-total').click(function() {
+                //Mostrar los items del carrito
+                $('.bolsa').slideToggle();
+            });
+
+        });
+    </script>
+
+
+
+</head>
+
+<body class="page-detalle">
+<header id="header">
+    <div class="header-bottom">
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <div id="search" class="col-md-6">
+                        <form id="busqueda">
+                            <input type="hidden" name="tipoBus" id="tipoBus" value="full" />
+                            <input id="autocompleta" class="search-text" type="text" name="palabrasBusqueda" placeholder="Titulo del libro, Autor, SKU..."/>
+                            <button class="btntwo search" title="Buscar"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav">
+            <div class="container">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <p class="carrito-total"> <span id="amount" class="simpleCart_quantity">0</span> item(s) $<span id="price" class="simpleCart_total">0.00</span> </p>
+                        <div class="bolsa">
+                            <div class="simpleCart_items"></div>
+                            <div class="opciones">
+                                <a class="boton simpleCart_empty" onclick="vaciarCarrito()" href="javascript:void(0)">Vaciar carrito</a>
+                                <a class="boton simpleCart_checkout" href="../Pago_formulario.html" target="_blank">Checkout</a>
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li ><a href="../index.html"><span>Inicio</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container main-container">
+    <div class="row">
+        <div class="content col-md-12">
+            <div itemscope="" >
+                <div class="fichaDetalle">
+                    <div id="detimg">
+                        <img itemprop="image" id="detportada" src="../imagenes/libro17/978607569183.jpg" title="1984" alt="1984" />
+                        <div class="wraper_idm"></div>
+                        <div class="wraper_ebook"></div>
+                    </div>
+
+                    <dl class="summary">
+                        <h1 itemprop="name">DIEZ DROGAS</h1>
+                        <p itemprop="author" id="autor">HAGER, THOMAS</p>
+                        <dt>Categoría&nbsp;</dt>
+                        <dd  class="editorial">Libros para Todos</dd>
+
+                        <dt>Editorial:</dt>
+                        <dd itemprop="isbn" class="number">CRITICA</dd>
+
+                        <dt>SKU:</dt>
+                        <dd itemprop="bookFormat">00017</dd>
+                    </dl>
+                </div>
+
+                <div class="price-col">
+                    <div itemscope="" itemprop="offers" class="precioDetalle">
+                        <div class="wraper-precioDetalle">
+                            <div class="infoprices">
+                                <span class="despues" itemprop="price">$300</span>
+                            </div>
+                        </div>
+
+                        <a id="botonComprar" onclick="buy()" class="btn buy" title="Anadir  al carrito de compras">Anadir al carrito <span class="icon icon-basket"></span></a>
+                    </div>
+                </div>
+
+                <div id="detpestanias">
+                    <ul id="detnavtab">
+                        <li><a href="#tabsinopsis">Sinopsis</a></li>
+                    </ul>
+                    <div class="clear"></div>
+
+                    <div id="tabsinopsis" >
+                        <p itemprop="description" class="bodytext">Detrás de cada fármaco se esconde una historia. Puede ser la de un investigador excéntrico que resultó ser un genio, un momento decisivo en la historia geopolítica, un nuevo avance tecnológico o un inesperado pero afortunado efecto secundario descubierto en un ensayo clínico. A través de datos curiosos, anécdotas poco conocidas y personajes un tanto extravagantes, Thomas Hager propone un recorrido por las diez drogas más significativas de la historia a la vez que muestra la evolución de nuestra cultura y práctica de la medicina. Desde el uso que nuestros antepasados le dieron al antiguo opio, pasando por la historia de la mujer que introdujo la vacuna de la viruela en Gran Bretaña o cómo la heroína fue un ingrediente común para remedios contra la tos, Hager dibuja una interesante historia de la medicina que incluye las infames «gotas noqueadoras», el primer antibiótico que salvó numerosas vidas, el primer antipsicótico que ayudó a vaciar los hospitales psiquiátricos, la Viagra y la Píldora, las estatinas y los anticuerpos monoclonales. Diez drogas que cambiaron nuestras vidas es un libro profundo y entretenido que narra nuestra extraña y vital dependencia de las drogas desde hace más de diez mil años hasta la actualidad.
+
+                        </p>
+                    </div>
+                </div>
+
+                <!-- PENDIENTE -->
+                <div class="otrosautor">
+                    <h2 class="title">Libros que te pueden interesar...</h2>
+
+
+                    <div class="container main-container">
+                        <div class="row">
+                            <div class="content col-md-12">
+                                <div class="carrusel-wrapper">
+                                    <ul id="lightSlider" class="lightSlider listado_libros books four-cols">
+
+                                        <li>
+
+                                            <div class="portada">
+
+                                                <a href="index.html"><img class="foto" src="../imagenes/libro21/978607077989.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                                                <div class="wraper_idm"></div>
+                                                <div class="wraper_ebook"></div>
+                                            </div>
+                                            <form>
+                                                <dl class="dublincore">
+                                                    <dt class="oculta">Titulo del libro</dt>
+
+                                                    <dd class="title"><a href="#">TRIPTOFANITO</a></dd>
+
+                                                    <dt class="oculta"></dt>
+                                                    <dd class="creator">                        FRENK, JULIO
+
+
+
+                                                    </dd>
+
+                                                    <dt class="oculta"></dt>
+
+
+                                                    <dd class="disponibilidad green">En stock</dd>
+
+                                                </dl>
+                                                <div class="botones">
+                                                    <p class="precio">
+                                                        $300.00
+                                                    </p>
+                                                </div>
+                                            </form>	                </li>
+
+
+                                        <li>
+
+                                            <div class="portada">
+
+                                                <a href="index.html"><img class="foto" src="../imagenes/libro2/978607746406.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                                                <div class="wraper_idm"></div>
+                                                <div class="wraper_ebook"></div>
+                                            </div>
+                                            <form>
+                                                <dl class="dublincore">
+                                                    <dt class="oculta">Titulo del libro</dt>
+
+                                                    <dd class="title"><a href="#">MAQUINA DE HACER LAS TAREAS (ALA DELTA COLIBRÍ)</a></dd>
+
+                                                    <dt class="oculta"></dt>
+                                                    <dd class="creator">                        SERIE AZUL
+
+
+
+                                                    </dd>
+
+                                                    <dt class="oculta"></dt>
+
+
+                                                    <dd class="disponibilidad green">En stock</dd>
+
+                                                </dl>
+                                                <div class="botones">
+                                                    <p class="precio">
+                                                        $300.00
+                                                    </p>
+                                                </div>
+                                            </form>	                </li>
+                                        <li>
+
+                                            <div class="portada">
+
+                                                <a href="index.html"><img class="foto" src="../imagenes/libro9/978607381200.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                                                <div class="wraper_idm"></div>
+                                                <div class="wraper_ebook"></div>
+                                            </div>
+                                            <form>
+                                                <dl class="dublincore">
+                                                    <dt class="oculta">Titulo del libro</dt>
+
+                                                    <dd class="title"><a href="#">MI ABUELA, LA LOCA</a></dd>
+
+                                                    <dt class="oculta"></dt>
+                                                    <dd class="creator">                        VALENZUELA, JOSÉ IGNACIO</dd>
+
+                                                    <dt class="oculta"></dt>
+                                                    <dd class="creator">                        SERIE AZUL
+
+
+
+                                                    </dd>
+
+                                                    <dt class="oculta"></dt>
+
+
+                                                    <dd class="disponibilidad green">En stock</dd>
+
+                                                </dl>
+                                                <div class="botones">
+                                                    <p class="precio">
+                                                        $300.00
+                                                    </p>
+                                                </div>
+                                            </form>	                </li>
+                                        <li>
+
+                                            <div class="portada">
+
+                                                <a href="index.html"><img class="foto" src="../imagenes/libro17/978607569183.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                                                <div class="wraper_idm"></div>
+                                                <div class="wraper_ebook"></div>
+                                            </div>
+                                            <form>
+                                                <dl class="dublincore">
+                                                    <dt class="oculta">Titulo del libro</dt>
+
+                                                    <dd class="title"><a href="#">DIEZ DROGAS</a></dd>
+
+                                                    <dt class="oculta"></dt>
+                                                    <dd class="creator">                        HAGER, THOMAS
+
+
+
+                                                    </dd>
+
+                                                    <dt class="oculta"></dt>
+
+
+                                                    <dd class="disponibilidad green">En stock</dd>
+
+                                                </dl>
+                                                <div class="botones">
+                                                    <p class="precio">
+                                                        $300.00
+                                                    </p>
+                                                </div>
+                                            </form>	                </li>
+
+
+
+
+                                    </ul>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="col-md-4 col-md-offset-5">Copyright 2022 © Libros y mas libros</footer>
+                    <div><br> <br><br> <br></div>
+                </div>
+            </div>
+
+        </div><!--cierre del div primary -->
+    </div><!--cierre del row -->
+</div><!--cierre del primer div container -->
+
+</body>
+</html>
+
