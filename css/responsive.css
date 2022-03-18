@@ -1,0 +1,1110 @@
+@media (max-width: 1200px) {
+	#detimg {
+	    width: 34%;
+	}
+	.fichaDetalle {
+	    width: 70%;
+	}
+	.fichaDetalle dl.summary {
+	    width: 58%;
+	}
+	.price-col {
+	    width: 27%;
+	}
+	.panel-body-txt {
+	    padding-top: 10px;
+	    width: 62%;
+	}
+/*
+	.featured-item .panel-body-img {
+	    width: 32%;
+	}
+*/
+	.featured-item .panel-body {
+	    height: auto;
+	}
+	.featured-item .panel-body-img img {
+	    height: auto;
+	}
+	.featured-item h3 {
+	    font-size: 18px;
+	    margin-bottom: 6px;
+	}
+	#header #search {
+	    width: 50%;
+	}
+	#header #cart {
+		width: 22%;
+	}
+	.numFavoritos {
+	    left: 42px;
+	}
+}
+@media (max-width: 992px) {
+	.content {
+	    padding: 24px 24px 0;
+	}
+	.slider {
+	    margin-bottom: 2px;
+	    margin-top: 35px;
+	}
+	#sidebar {
+	    border-right: medium none;
+	    margin: 10px 0 0 0;
+	    padding: 0 10px;
+	    width: 100%;
+	    border-top: 1px solid #eee;
+	    padding-top: 10px;
+	}
+	.footer-top p{
+		line-height: 1.4em;
+		font-size: 12px;
+	}
+	.miniFichaLateral {
+	    width: 46%;
+	}
+    ul.proceso_compra li {
+    	font-size: 12px;
+    }
+	ul.proceso_compra {
+	    padding: 10px;
+	}
+	.fichaDetalle dl.summary {
+        width: 55%;
+    }
+    .list_carousel #prev_carou {
+	    left: 15px;
+	}
+	.list_carousel #next_carou {
+	    right: 15px;
+	}
+	.actions-box {
+	    width: 100%;
+	}
+	.navbar-collapse {
+	    padding-left: 0 !important;
+	}
+	.navbar .navbar-nav > li > a {
+	    font-size: 15px;
+	}
+	.nav > li > a {
+	    padding: 14px;
+	}
+	.logotipo img {
+	    width: 100%;
+	}
+	#search {
+	    margin: 17px 0 6px;
+	    width: 47%;
+	}
+	#cart {
+	    margin-top: 12px;
+	}
+	.page-login {
+	    padding: 0 20px;
+	}
+	.home-featured {
+	    margin-top: -16px;
+	}
+	.featured-item {
+	    margin-bottom: 20px;
+	}
+	#header .logotipo {
+	    max-width: 190px;
+	}
+	.footer-newsletter{
+		padding: 22px 0;	
+	}
+	.footer-newsletter-info {
+	    padding-left: 0px;
+	    text-align: center;
+	}
+	.footer-newsletter-form {
+	    margin-top: 14px;
+	}
+	.footer-newsletter-info::before {
+	    display: none;
+	}
+	#nav-header li a {
+	    font-size: 12px;
+	}		
+		
+	/* School module */
+	.school-header::before {
+	    height: 140px;
+	}
+	.school-txt {
+	    top: 54px;
+		left: 194px;
+	}
+	.school-txt h1 {
+	   font-size: 26px;
+	}
+	.school-logo {
+	    bottom: -12px;
+	    height: 140px;
+	    left: 22px;
+	    width: 140px;
+	}
+	.school-module .logotipo img {
+	    width: 352px;
+	}
+	.school-module .main-container {
+	    margin-top: 10px;
+	}
+	.checkout-options > div {
+	    width: 100%;
+	}
+	.sticky-wrapper {
+	    height: 170px !important;
+	}
+	#detimg {
+	    margin-right: 10px;
+	    width: 30%;
+	}
+	.fichaDetalle h1 {
+	    font-size: 22px;
+	}
+	.footer-bottom h2 {
+	    font-size: 13px;
+	    margin-botttom: 8px;
+	}
+	.footer-menu a {
+	    font-size: 12px;
+	    margin-bottom: 3px;
+	}
+	.bestsellers .portada {
+	    width: 11%;
+	}
+	.lightSlider{
+		height: auto !important;	
+	}
+	.mycart{
+		display: none;
+	}	
+	.is-sticky .logotipo img {
+	    width: 100% !important;
+	}
+	.numFavoritos {
+	    left: 68px;
+	}
+	.listado_libros.one-cols .valoracion img,
+	.listado_libros.six-cols .valoracion img,
+	.listado_libros.five-cols .valoracion img {
+	    float: left;
+	}
+	.listado_libros.one-cols .valoracion .valoracion-users,
+	.listado_libros.six-cols .valoracion .valoracion-users,
+	.listado_libros.five-cols .valoracion .valoracion-users {
+	    margin-top: -4px
+	}
+	.listado_libros .valoracion .valoracion-users {
+	    float: left;	
+	}
+}
+
+/*
+@media (min-width : 767px) and (max-width : 992px) {
+	.featured-item .panel-body {
+	    min-height: 276px;
+	}
+	.featured-item .panel-body-txt {
+	    padding: 10px 20px;
+	    width: 100%;
+	}
+	.featured-item .panel-body-img {
+		text-align: center;
+	    width: 100%;
+	}
+	.featured-item .panel-body-img img{
+	    max-width: 86px;
+	}
+	.featured-item h3 {
+	    text-align: center;
+	}
+	.featured-item p {
+	    text-align: center;
+	}
+}
+*/
+
+@media (max-width: 767px) {
+	body {
+	    padding-top: 90px;
+	}
+	body.school-module {
+	    padding-top: 60px;
+	}
+	.school-module {
+	    background-position: 0 40px;
+	}
+	#header {
+	    position: fixed;
+	    z-index: 999;
+	}
+	.header-top {
+	    padding: 4px 0 12px;
+	    border: none;
+	}
+	.header-middle {
+	    padding: 0;
+	}
+	#header .logotipo {
+	    width: auto;
+	    left: 0;
+	    margin: 0;
+	    position: absolute;
+	    top: 6px;
+	}
+	#header .logotipo a{
+	    color: #fff;
+	}
+	#header .navbar{
+	    background-color: rgba(0, 0, 0, 0);
+	    background-image: none;
+	    border: medium none;
+	    box-shadow: none;
+	}
+	#header .navbar {
+    	clear: none;
+    }
+	.slider {
+	    margin-top: 32px;
+	}
+	.materias-mobile{
+		display: block !important;
+		margin-bottom: 18px;	
+	}
+	.bloque-top {
+    	display: none !important;
+    }
+	.navbar-toggle {
+	    margin-right: 9px;
+	    position: absolute;
+	    right: 0;
+	    top: 1px;
+	}
+	.account {
+    	margin: 8px 46px 0 16px;
+	    background-color: transparent;
+	    border: none;
+	}
+	.school-module .account {
+	    margin: 8px 8px 0 16px;
+	}
+	.account .btn-login {
+	    padding: 0;
+	}
+	.account .icon {
+	    font-size: 22px;
+	}
+	#languaje {
+		margin-top: 12px;
+	}
+	#cart {
+	    right: 75px;
+	    top: -57px;
+	}
+	#search .btntwo.search {
+	    float: right;
+	    height: 48px;
+	    margin-right: 0;
+	    padding: 0;
+	    width: 48px;
+	}
+	#header #search {
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	}
+	#search .search-text {
+	    border: 0 none;
+	    border-radius: 0;
+	    margin-left: 0;
+	    width: calc(100% - 48px);
+		height: 48px;
+	}
+	#search .btntwo.search {
+	    background-color: #243966 !important;
+	    border-radius: 0;
+	}
+	.account .fa-user {
+	    padding: 8px 12px;
+	    width: 38px;
+	    background: none repeat scroll 0 0 #C2C2C2;
+	}
+	.navbar .container{
+		padding-left: 15px;
+	    padding-right: 15px;
+	}
+	.header-nav .container{
+		padding-left: 0;
+	    padding-right: 0;		
+	}
+	
+	/* Primer nivel */
+	.navbar-default .navbar-nav > a:hover, 
+	.navbar-default .navbar-nav > a:focus,
+	.navbar-default .navbar-nav > .open > a, 
+	.navbar-default .navbar-nav > .open > a:hover, 
+	.navbar-default .navbar-nav > .open > a:focus,
+	.navbar-default .navbar-nav > .active > a,
+	.navbar-default .navbar-nav > .active > a:hover, 
+	.navbar-default .navbar-nav > .active > a:focus {
+	    text-shadow: none;
+	}
+
+	/* Segundo nivel */
+	.dropdown-menu .dropdown-explorar li > a {
+	    background-color: #FFFFFF;
+	    margin: 0;
+	    padding: 9px 10px 9px 16px;
+	}
+	.dropdown-menu .dropdown-explorar li > a:hover {
+		background-color: #F7F7F7;
+	}
+	.dropdown-menu.dropdown-menu-three .dropdown-materias,
+	.dropdown-menu.dropdown-menu-three .dropdown-explorar,
+	.dropdown-menu.dropdown-menu-three li,
+	.dropdown-menu.dropdown-menu-two li{
+		width: 100% !important;
+		margin: 0;
+	}
+	.dropdown-menu li > a, .dropdown-menu li a{
+	    background-color: #FFFFFF;
+	    border-bottom: 1px solid #E6E6E6;
+	    border-right: medium none;
+	    font-size: 12px;
+	    margin: 0;
+	    padding: 9px 10px 9px 16px !important;
+	}	
+	.dropdown-menu li > a:hover, .dropdown-menu li a:hover{
+	    background-color: #F7F7F7 !important;
+	}		
+	.navbar-nav {
+	    margin: 0;
+		width: 100%;
+	}
+	.navbar .navbar-collapse{
+		overflow-x: hidden;
+	}
+	.navbar .navbar-nav > li > a {
+		background-color: #f9f9f9;
+	    border-bottom: 1px solid #e8e8e8;
+	    border-right: medium none;
+	    color: #333333;
+	    font-size: 14px;
+	    padding: 10px 16px;
+	}
+	.navbar .navbar-nav > .active > a {
+	    background-image: none;
+	    background-repeat: repeat-x;
+	    box-shadow: none;
+	}	
+	.navbar-nav .main-nav-title{
+		color: #E78C32;
+		padding: 6px 12px;
+	}
+	.navbar-nav .open .dropdown-menu {
+	    position: relative;
+	    padding: 0;	
+    }
+	.navbar-nav .main-nav-title {
+	    display: none;
+	}
+	.tx-ttproducts-pi1 h1, .verpedido-title{
+		display: none;	
+	}
+	#header .navbar {
+	    padding: 0;
+	}
+	.account .btn-login {
+		padding-left: 9px;
+	}
+    .libroimg img {
+        max-width: 80px;
+    }
+    .list_carousel {
+    	margin-top: 0;
+        padding: 20px 0;
+        box-shadow: none;
+        border: 0;
+    }
+    .caroufredsel_wrapper {
+		height: 130px !important;
+	}
+	.list_carousel #prev_carou, 
+	.list_carousel #next_carou {
+		top: 65px;
+	}
+	.list_carousel_content #prev_carou, 
+	.list_carousel_content #next_carou {
+		top: 36px;
+	}
+	.content.col-md-12 {
+	    padding-left: 16px;
+	    padding-right: 16px;
+	}
+	.fichaDetalle,
+	.price-col {
+	    width: 100%;
+	}
+	#footer div{
+		text-align: center !important;
+	}
+	.footer-logos img {
+	    float: none;
+	    margin: 0 auto;
+	}
+	.footer-top {
+	    padding: 12px 0 16px;
+	}
+	.footer-top .icon-footer {
+	    display: none !important;
+	}
+	.footer-copyright {
+	    padding: 10px 20px;
+	}
+	.footer-info {
+	    padding-top: 0;
+	}
+	.footer-info p {
+	    padding-bottom: 10px;
+	    padding-left: 0;
+	}
+	.price-col{
+		margin-top: 30px;
+	}
+	.precioDetalle .discountprice {
+		left: -10px;
+	}
+	.comentario h4 {
+		margin-top: 5px;
+	}
+	.checkout-col {
+		padding: 0 30px;
+	}
+	.checkout-title {
+	    padding: 20px 20px 0;
+	}
+	.highlight-box .btntwo,
+	.highlight-box .btn-days{
+	    width: 100%;
+	    margin-bottom: 10px;
+	}
+	.highlight-box .btn-days{
+	    margin-top: 10px;
+	}
+	.cart-box {
+	    padding: 20px 6px;
+	}
+	.cart-box .col-md-6{
+	    margin-bottom: 10px;	
+	}
+
+	.cupon #codigoCupon, .cupon #codigoTarjeta {
+		width: 100%;
+	} 
+	.sticky-wrapper {
+	    height: auto !important;
+	}
+/*
+	.featured-item .panel-body {
+	    height: auto;
+	}
+	.featured-item .panel-body-img {
+	    float: left;
+	    margin-left: 20px;
+	    width: 14%;
+	}
+*/
+	.school-header::before {
+	    height: 120px;
+	}
+	.school-txt {
+	    top: 54px;
+		left: 194px;
+	}
+	.school-txt h1 {
+	   font-size: 26px;
+	}
+	.school-module .logotipo img {
+	    width: 100%;
+	}
+	.school-txt {
+	    left: auto;
+	    position: relative;
+	    text-align: center;
+	    top: auto;
+	    width: 100%;
+	}
+	.school-txt p,
+	.school-txt h1{
+		color: #333;
+	}
+	.school-txt h1 {
+	    font-size: 18px;
+	}
+	.school-txt p {
+	    font-size: 16px;
+	}
+	.school-logo {
+	    bottom: 0;
+	    height: 90px;
+	    left: 50%;
+	    line-height: 0;
+	    margin-left: -45px;
+	    overflow: hidden;
+	    top: 4px;
+	    width: 90px;
+	}
+	.school-txt {
+	    left: auto;
+	    position: relative;
+	    text-align: center;
+	    top: 34px;
+	    width: 100%;
+	}
+	.school-header {
+   		height: 140px;
+	}
+	.school-header::before {
+		background-image: none;
+	}
+	.school-header-wrapper img {
+		display: none;
+	}
+	.school-header-wrapper {
+	    height: 72px;
+	}
+	.btn-school {
+	    font-size: 12px;
+	    position: absolute;
+	    right: 3px;
+	    top: 4px;
+	}
+	.price-col {
+	    margin-top: 10px;
+	}
+	.precioDetalle .wraper-precioDetalle {
+	    border: 1px solid #eeeeee;
+	    padding: 4px 0 18px;
+	    text-align: center;
+	}
+	.precioDetalle .discountprice {
+	    left: auto;
+	    right: 20px;
+	    top: 22px;
+	}
+	.precioDetalle .disponibilidad {
+	    text-align: center;
+	}
+	.fichaDetalle {
+    	border: none;
+    }
+    .form-events .radio, 
+    .form-events .checkbox {
+	    padding-left: 20px;
+	}
+}
+@media (max-width: 698px) {
+	.fichaDetalle, .price-col {
+		width: 100%
+	}
+    p, .dashed-content p{
+        font-size: 14px;
+    }
+	h2.subtitle, h2.title, h2 {
+	    font-size: 18px;
+	}
+    h1.subtitle, h1.title, h1 {
+        font-size: 17px;
+    }
+    .fichaDetalle dl.summary {
+        width: 50%;
+    }
+	.checkout-box-col {
+	    width: 100%;
+	}
+	.field input, .field select, .field textarea, .field input.fichero {
+	    width: 100%;
+	}
+	ul.proceso_compra {
+	    border: medium none;
+	    height: 24px;
+		margin: 26px auto 0;
+	    min-height: 33px;
+	    padding: 0;
+	    text-align: center;
+	    width: 100%;
+	}		
+	ul.proceso_compra li {
+	    font-size: 12px !important;
+	    margin: 0;
+	    padding: 0;
+	    width: 32%;
+	}
+	ul.proceso_compra li span {
+	    background-color: transparent;
+	    display: inline-block;
+	    font-size: 10px;
+	    height: auto;
+	    text-align: center;
+	    width: auto;
+	}
+}
+@media (max-width: 580px) {
+	.field input,.field select, .field textarea, .field input.fichero{
+		width: 100%;
+	}
+	#box-register, #box-login{
+		padding: 15px;
+		border: 1px solid #E3E3E3;
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	.fichaDetalle dl.summary{
+        width: 100%;
+    }
+	.miniFichaLateral {
+	    width: 96%;
+	}
+	#detimg {
+	    margin: 0 0 26px;
+	    max-width: none;
+	    text-align: center;
+	    width: 100%;
+	}
+	.fichaDetalle #detimg img {
+	    float: none;
+	    max-width: 340px;
+	}
+	
+}
+@media (max-width: 480px) {
+	#header .logotipo {
+	    left: 0;
+	    margin-left: 0;
+	    margin-top: 0;
+	    position: fixed;
+	    top: 7px;
+	}
+	#detimg {
+	    margin-right: 13px;
+	}
+	.basket_items th {
+	    font-size: 10px;
+		padding: 8px 5px 7px 11px;
+	}
+	.bloque-top {
+		display: none;
+	}
+	.title-list{
+		display: none;
+	}
+	.content {
+		padding: 24px 10px 0
+	}
+	#btn_realizar, .botones_cesta .btn{
+	    margin-bottom: 17px;
+	    width: 100%;
+	}
+	#linkAplicar, #linkValidar {
+		width: 100%;
+    	margin-bottom: 2px;
+		margin-top: 10px !important;
+	}
+	.selectenvio {
+		margin: 0;
+	}
+	.labelenvio strong, .labelpago strong {
+	    float: left;
+	}
+	.imgpro{
+		padding: 0;
+	}
+	td.price, td.total {
+		padding: 5px;
+	}
+	td {
+		padding: 14px 5px;
+    }
+	td.verpedido {
+	    width: auto;
+	}
+	td.precio {
+	    width: 75px;
+	}
+/*
+	#detimg {
+        margin-right: 12px;
+        max-width:  142px;
+    }
+    .fichaDetalle h1 {
+        font-size: 12px;
+    }
+    .fichaDetalle #autor a {
+        font-size: 11px;
+        line-height: 1em;
+    }
+    .fichaDetalle dl.summary {
+        width: 46%;
+    }
+*/
+	.eventos .entradilla, .eventos h2 {
+        width: 82%;
+    }
+	.footer-menu {
+		width: 100% !important;
+		padding: 6px 0;
+	}
+	.footer-menu a {
+	    display: block;
+	    float: none;
+	    margin-left: 0;
+	    margin-top: 0;
+	    padding: 4px 0;
+	    text-align: center;
+	    width: 100%;
+	}
+	.footer-menu a:hover {
+	    text-decoration: none !important;
+	}
+	.footer-logos {
+	    padding: 0 26px !important;
+	}
+	.footer-bottom {
+	    border-top: none;
+	}
+	.footer-menu a {
+	    padding: 0;
+	}
+	
+	.home-featured > div{
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 320px) {
+	#header .logotipo {
+	    margin-top: 25px;
+	}
+	#header .logotipo img {
+	    height: auto;
+	    max-width: 110px;
+	}
+}
+
+
+
+/* Books Lists*/
+@media (max-width: 1200px) {
+	/* Six cols */
+	.six-cols .portada {
+	    margin-bottom: 0;
+	    max-width: 145px;
+	    min-height: 212px;
+	    width: 100%;
+	}
+	.carrusel-wrapper .six-cols .portada {
+	    min-height: 188px;
+	}
+	.carrusel-wrapper .six-cols img {
+	    max-height: 176px;
+	}
+
+	.listado_libros .six-cols img {
+	    height: 186px;
+	}
+
+	/* Five cols */
+	.page-listaLibros .five-cols li {
+	    width: 25%;
+	}
+	.five-cols .portada img {
+    	min-height: 0;
+	}
+	.five-cols .portada {
+		min-height: 172px;
+	}
+	
+	/* One cols lista libros*/
+	.page-listaLibros .one-cols dl.dublincore dd.title a {
+	    font-size: 18px;
+	}
+	.page-listaLibros .one-cols.listado_libros dd.creator {
+	    font-size: 14px;
+	}	
+}
+@media (max-width: 992px) {
+	.six-cols li {
+	    padding: 0 4px;
+	    width: 33.3333%;
+	}
+	.six-cols .portada {
+	    float: left;
+	    margin-right: 5%;
+	    width: 40%;
+		min-height: 160px;
+	}
+	.listado_libros.six-cols img {
+	    height: auto;
+	}
+	.five-cols li form, 
+	.six-cols li form,
+	.listado_libros.five-cols li p.precio,
+	.listado_libros.six-cols li p.precio,
+	.listado_libros.six-cols .botones, 
+	.listado_libros.five-cols .botones {
+	    text-align: left;
+	}
+	
+	.books.six-cols li form {
+	    width: 55%;
+	}
+	.five-cols dl.dublincore dd.title, 
+	.six-cols dl.dublincore dd.title {
+	    margin-bottom: 0;
+	}
+	.carrusel-wrapper .six-cols li {
+	    padding: 10px 20px 0 !important;
+	}
+	.carrusel-wrapper .six-cols li form{
+		width: 100%;
+	}
+	.carrusel-wrapper .six-cols .portada {
+	    float: none;
+	    margin: 0 auto;
+	    min-height: 216px !important;
+	    width: 100%;
+	}
+	.carrusel-wrapper .six-cols img {
+	    max-height: 196px;
+	}
+	.carrusel-wrapper .six-cols li p.precio,
+	.carrusel-wrapper .six-cols li form,
+	.carrusel-wrapper .six-cols .botones {
+	    text-align: center !important;
+	}
+	.carrusel-wrapper .listado_libros.six-cols img {
+	    height: auto;
+	}
+	
+	/* Five cols */
+	.five-cols .portada {
+	    width: 90%;
+	}
+	/* Six cols */
+	.six-cols .portada {
+	    min-height: 0;
+	    width: 38%;
+	}
+	.six-cols img {
+	    height: auto;
+	}
+	#sidebar {
+	    float: left;
+	    margin: 0;
+	}
+}
+@media (min-width : 767px) and (max-width : 992px) {
+	.page-listaLibros .five-cols li form, 
+	.page-listaLibros .six-cols li form,
+	.page-listaLibros .listado_libros.five-cols li p.precio,
+	.page-listaLibros .listado_libros.six-cols li p.precio,
+	.page-listaLibros .listado_libros.six-cols .botones, 
+	.page-listaLibros .listado_libros.five-cols .botones {
+	    text-align: center;
+	}
+}
+@media (max-width: 768px) {
+	.one-cols li {
+	    width: 100%;
+	    padding: 0 4px;
+	}
+	.two-cols li, 
+	.three-cols li, 
+	.four-cols li, 
+	.five-cols li, 
+	.six-cols li {
+	    margin-right: 0;
+	    width: 50%;
+	    padding: 0 4px;
+		margin-bottom: 24px;
+	}
+	
+	.one-cols li .portada {
+	    width: 18%;
+	    margin-right: 26px;
+	}
+	.two-cols li .portada, 
+	.three-cols li .portada, 
+	.four-cols li .portada, 
+	.five-cols li .portada, 
+	.six-cols li .portada {
+	    width: 38%;
+	    margin-right: 4%;
+		min-height: 0;
+		float: left;
+	}
+	
+	.one-cols li form {
+	    width: 76%;
+	}
+	.two-cols li form, 
+	.three-cols li form, 
+	.four-cols li form,  
+	.five-cols li form,  
+	.six-cols li form{
+	    width: 56%;
+	}
+
+	.one-cols.listado_libros .dublincore {
+	    padding-right: 16px;
+	    width: 66%;
+	}
+	.one-cols.listado_libros .botones {
+	    padding: 0 0 0 22px;
+	    width: 34%;
+	}
+	.one-cols dl.dublincore dd.title a {
+	    font-size: 18px;
+	}
+	.one-cols.listado_libros dd.creator {
+	    font-size: 16px;
+	}
+
+	.page-listaLibros .five-cols li {
+		margin-right: 0;
+		width: 50%;
+		padding: 0 4px;
+	}
+	.page-listaLibros .five-cols li .portada {
+	    width: 38%;
+	    margin-right: 5%;
+	}
+
+	.one-cols dl.dublincore dd.title a,
+	.two-cols dl.dublincore dd.title a,
+	.three-cols dl.dublincore dd.title a,
+	.four-cols dl.dublincore dd.title a,
+	.five-cols dl.dublincore dd.title a, 
+	.six-cols dl.dublincore dd.title a {
+	    height: auto;
+	}
+
+	.two-cols li .mulsinop, 
+	.three-cols li .mulsinop, 
+	.four-cols li .mulsinop,  
+	.five-cols li .mulsinop, 
+	.six-cols li .mulsinop{
+        display: none !important;
+	}
+    
+	.five-cols li form, 
+	.six-cols li form {
+	    text-align: left;
+	}
+	.listado_libros.six-cols .botones, 
+	.listado_libros.five-cols .botones {
+	    text-align: left;
+	}
+	.carrusel-wrapper .six-cols li {
+	    padding: 10px 0 0 !important;
+	}
+	.carrusel-wrapper .six-cols .portada {
+	    min-height: 226px !important;
+	}
+}
+@media (max-width: 640px) {
+	.carrusel-wrapper .six-cols .portada {
+	    min-height: 200px !important;
+	    padding: 0 12px;
+	}
+	.carrusel-wrapper .six-cols img {
+	    max-height: 190px;
+	}
+}
+@media (max-width: 580px) {
+	.one-cols li, 
+	.two-cols li, 
+	.three-cols li, 
+	.four-cols li, 
+	.five-cols li, 
+	.six-cols li {
+	    width: 100%;
+	}
+	.one-cols li .portada, 
+	.two-cols li .portada, 
+	.three-cols li .portada, 
+	.four-cols li .portada, 
+	.five-cols li .portada, 
+	.six-cols li .portada {
+	    width: 28%;
+	    margin-right: 4%;
+	}
+	.one-cols li form, 
+	.two-cols li form, 
+	.three-cols li form, 
+	.four-cols li form, 
+	.five-cols li form, 
+	.six-cols li form {
+	    width: 62%;
+	    margin-right: 4%;
+	}
+
+	.one-cols li .mulsinop{
+        display: none !important;
+	}
+	
+	.page-listaLibros .five-cols li {
+		margin-right: 0;
+		width: 100%;
+		padding: 0 4px;
+	}
+	.page-listaLibros .five-cols li .portada {
+	    width: 28%;
+	    margin-right: 5%;
+	}
+
+	.one-cols.listado_libros .dublincore {
+	    border-right: medium none;
+	    width: 100%;
+	}
+	.one-cols.listado_libros .botones {
+	    padding: 0;
+	    width: 100%;
+	}
+	.page-listaLibros .one-cols.books .btntwo, 
+	.one-cols.books .btntwo {
+	    font-size: 14px;
+	    margin-top: 10px;
+	    padding: 6px 13px;
+	    width: auto;
+	}
+	.one-cols dl.dublincore dd.title a {
+	    font-size: 14px;
+	}
+	.one-cols.listado_libros dd.creator {
+	    font-size: 12px;
+	}
+	.one-cols.listado_libros p.precio {
+	    font-size: 18px;
+	}
+	.one-cols.listado_libros p.precio strike {
+	    font-size: 16px;
+	    margin-bottom: 4px;
+	}
+}
+@media (max-width: 540px) {
+
+}
+@media (max-width: 494px) {
+	
+}
+
+
+
+
+
+
