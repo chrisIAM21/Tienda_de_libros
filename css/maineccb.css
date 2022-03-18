@@ -1671,7 +1671,7 @@ h2.subtitle {
 /* Search
 ********************************************************/
 #search {
-    float: left;
+    float: right;
     height: auto;
 	margin: 22px 0 6px;
     width: 50%;
