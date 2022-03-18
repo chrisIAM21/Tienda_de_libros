@@ -1,10 +1,188 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
     <title>Tienda de Libros</title>
+    <meta charset="iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Tienda de libros"/>
+    <meta name="keywords" content="" />
+    <meta name="revisit" content="15 days" />
+    <meta name="revisit-after" content="1 days" />
+
+
+    <meta name="robots" content="index,follow" />
+
+
+
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
 </head>
-<body>
+
+<body class="page-index" onload="" itemscope itemtype="https://schema.org/WebPage" >
+<div><br> <br><br> <br></div>
+<h1 class="text-center text-uppercase"><strong><a href="index.html">Tienda de Libros</a></strong></h1>
+<!--$Buscador-->
+<header id="header">
+    <div class="header-bottom">
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+
+                    <div id="search" class="col-md-5 col-md-offset-2">
+                        <form id="busqueda">
+                            <input type="hidden" name="tipoBus" id="tipoBus" value="full" />
+                            <input id="autocompleta" class="search-text" type="text" name="palabrasBusqueda" placeholder="Título del libro, Autor, SKU..."/>
+                            <button onclick="search()" class="btntwo search" title="Buscar" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav">
+            <div class="container">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="index.html"><span>Inicio</span></a></li>
+
+                            <li class="dropdown">
+                                <a class="hidden-xs" href="home_libros.html" class="dropdown-toggle" data-toggle="dropdown">Categorías <b class="caret"></b></a>
+                                <a class="visible-xs" href="home_libros.html">Categorías</a>
+                                <ul class="dropdown-menu dropdown-menu-cabecera">
+                                    <ul class="menu-explorar">
+                                        <ul class="menu-materias">
+
+                                            <li >
+                                                <a href="#" title="Licenciatura y Novelas">Licenciatura y Novelas</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Arte">Arte</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Arquitectura">Arquitectura</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Cine">Cine</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Fotografía">Fotografía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Novela Gráfica">Novela Gráfica</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Cuerpo, Alma y Espíritu">Cuerpo, Alma y Espíritu</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Salud y Ejercicio">Salud y Ejercicio</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Negocios y Finanzas">Negocios y Finanzas</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ciencia y Naturaleza">Ciencia y Naturaleza</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Derecho">Derecho</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Algebra">Algebra</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Psicología">Psicología</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Filosofía">Filosofía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ingeniería y Tecnología">Ingeniería y Tecnología</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Lenguaje y Referencia">Lenguaje y Referencia</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Viajes">Viajes</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Gatronomía">Gatronomía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Niños y Jóvenes">Niños y Jóvenes</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Lo de hoy">Lo de hoy</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ellas escriben su historia">Ellas escriben su historia</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </ul>
+
+                                </ul>
+
+
+
+
+
+
+
+
+                                <div class="container main-container">
+                                    <div class="row">
+                                        <div class="content col-md-12">
+                                            <div class="carrusel-wrapper"> </div>
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer>Copyright 2022 © </footer>
+                                <script type="text/javascript">
+                                    var rutaHtml = "";
+                                    var paginaActual = "index.html";
+                                    var paramMoneda = "$|I|2|.|,|";
+                                    var totalArticulosCesta = 0;
+                                    var slider = 1;
+                                    var carrusel = 1;
+                                    var tipo_carrusel = 2;
+                                    var autocomplete = 1;
+                                    var analytics = "UA-41893100-1";
+                                    var afiliado = "";
+
+                                    var aceptar = "Aceptar";
+                                    var verCesta = "Ver carrito";
+                                    var artInsCestaOK = "Se ha aÃ±adido correctamente el articulo al carrito de compras.";
+                                    var verTodos = "Ver todos";
+                                    var introPalBusqueda = "Introduce las palabras de b&uacute;squeda";
+                                </script>
+
+                                <script type="text/javascript" src="js/jquery.js" ></script>
+                                <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+                                <script type="text/javascript" src="js/jquery.pnotify.min.js"></script>
+                                <script type="text/javascript" src="js/bootstrap.min.js"></script>
+                                <script type="text/javascript" src="js/jquery-labelauty.js"></script>
+
+                                <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+                                <script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+                                <script type="text/javascript" src="cluetip/jquery.cluetip.min.js" ></script>
+
+
+                                <script type="text/javascript" src="js/check.js"></script>
+                                <script type="text/javascript" src="js/util.js"></script>
+                                <script type="text/javascript" src="js/general.js"></script>
+                                <script type="text/javascript" src="js/lightslider.js"></script>
+                                <script type="text/javascript" src="js/jquery.sticky.js"></script>
+                                <script type="text/javascript" src="js/metronic.min.js"></script>
+                                <script type="text/javascript" src="js/typeahead/handlebars.min.js"></script>
+                                <script type="text/javascript" src="js/typeahead/typeahead.bundle.min.js"></script>
+
 
 </body>
+
 </html>
+
