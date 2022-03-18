@@ -1,10 +1,1125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
     <title>Tienda de Libros</title>
+    <meta charset="iso-8859-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Tienda de libros"/>
+    <meta name="keywords" content="" />
+    <meta name="revisit" content="15 days" />
+    <meta name="revisit-after" content="1 days" />
+
+
+    <meta name="robots" content="index,follow" />
+
+
+    <link rel="stylesheet" type="text/css" href="css/font/font-awesome.css" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.ui.dialog.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-labelauty.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/rawline.css" />
+    <link rel="stylesheet" type="text/css" href="css/maineccb.css?3" />
+    <link rel="stylesheet" type="text/css" href="css/colegios.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="cluetip/jquery.cluetip.css" />
+    <link rel="stylesheet" type="text/css" href="js/typeahead/typeahead.css" />
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+
+    <script type="text/javascript" src="../js/funciones.js"></script>
+
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
 </head>
-<body>
+
+<body class="page-index" onload="" itemscope itemtype="https://schema.org/WebPage" >
+<div><br> <br><br> <br></div>
+<h1 class="text-center text-uppercase"><strong><a href="index.html"><img src="imagenes/logo-02.png" width="120" height="91" alt="" class=""></a><a href="index.html">Tienda de Libros</a></strong></h1>
+
+<!--$Buscador-->
+<header id="header">
+    <div class="header-bottom">
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+
+                    <div id="search" class="col-md-5 col-md-offset-2">
+                        <form id="busqueda">
+                            <input type="hidden" name="tipoBus" id="tipoBus" value="full" />
+                            <input id="autocompleta" class="search-text" type="text" name="palabrasBusqueda" placeholder="Titulo del libro, Autor, SKU..."/>
+                            <button onclick="search()" class="btntwo search" title="Buscar" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-nav">
+            <div class="container">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="index.html"><span>Inicio</span></a></li>
+
+                            <li class="dropdown">
+                                <a class="hidden-xs" href="home_libros.html" class="dropdown-toggle" data-toggle="dropdown">Categorias <b class="caret"></b></a>
+                                <a class="visible-xs" href="home_libros.html">Categorias</a>
+                                <ul class="dropdown-menu dropdown-menu-cabecera">
+                                    <ul class="menu-explorar">
+                                        <ul class="menu-materias">
+
+                                            <li >
+                                                <a href="#" title="Licenciatura y Novelas">Licenciatura y Novelas</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Arte">Arte</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Arquitectura">Arquitectura</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Cine">Cine</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Fotografía">Fotografía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Novela Gráfica">Novela Gráfica</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Cuerpo, Alma y Espíritu">Cuerpo, Alma y Espíritu</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Salud y Ejercicio">Salud y Ejercicio</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Negocios y Finanzas">Negocios y Finanzas</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ciencia y Naturaleza">Ciencia y Naturaleza</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Derecho">Derecho</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Algebra">Algebra</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Psicología">Psicología</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Filosofía">Filosofía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ingeniería y Tecnología">Ingeniería y Tecnología</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Lenguaje y Referencia">Lenguaje y Referencia</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Viajes">Viajes</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Gatronomía">Gatronomía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Niños y Jóvenes">Niños y Jóvenes</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Lo de hoy">Lo de hoy</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ellas escriben su historia">Ellas escriben su historia</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </ul>
+                                    </li>
+                                </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+
+<div class="container main-container">
+    <div class="row">
+        <div class="content col-md-12">
+            <div class="carrusel-wrapper">
+                <ul id="lightSlider" class="lightSlider listado_libros books three-cols">
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro1.html"><img class="foto" src="imagenes/libro1/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro2.html"><img class="foto" src="imagenes/libro2/978607746406.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">MAQUINA DE HACER LAS TAREAS (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro3.html"><img class="foto" src="imagenes/libro3/978607569214.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INTERRUPCIÓN</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        VIZZAVONA, SANDRA
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro4.html"><img class="foto" src="imagenes/libro4/978849988918.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">EL CEREBRO EN FORMA A CUALQUIER EDAD</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        GUPTA, SANJAY
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro5.html"><img class="foto" src="imagenes/libro5/978841853148.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">EL AYUNO ALCALINO</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        WACKER, SABINE
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro6.html"><img class="foto" src="imagenes/libro6/978607569189.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">EL LIBRO DEL NIKSEN</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        MECKING, OLGA
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro7.html"><img class="foto" src="imagenes/libro7/978607532815.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">LOMOS DIVERTIDOS: MI PEQUEÑA JIRAFA</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        WEERASEKERA, REBECCA
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro8.html"><img class="foto" src="imagenes/libro8/978607078233.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">THE HIGH REPUBLIC. UNA PRUEBA DE VALOR</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        IRELAND, JUSTINA
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro9.html"><img class="foto" src="imagenes/libro9/978607381200.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">MI ABUELA, LA LOCA</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        VALENZUELA, JOSÉ IGNACIO</dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro10.html"><img class="foto" src="imagenes/libro10/978841233882.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">VIAJE A TRAVÉS DEL LIBRO DE EJERCICIOS -UN CURSO DE MILAGROS- (5)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        WAPNICK, KENNETH
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro11.html"><img class="foto" src="imagenes/libro11/978607713445.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">SENDEROS DEL EROTISMO</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        BARRIOS, DAVID
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro12.html"><img class="foto" src="imagenes/libro12/978607746021.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">TOMÁS Y EL BORRADOR MÁGICO (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE ROJA
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro13.html"><img class="foto" src="imagenes/libro13/978841853147.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">TÉCNICAS DE SANACIÓN ENERGÉTICA. GUÍA PRÁCTICA</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        FRAZIER, KAREN
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro14.html"><img class="foto" src="imagenes/libro14/978607381108.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">¿CUÁNTO MIDE UN METRO?</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        LEÓN, GABRIEL </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro15.html"><img class="foto" src="imagenes/libro15/978607381074.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">STINK Y LA PIJAMADA TIBURÓN</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        MCDONALD, MEGAN
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro16.html"><img class="foto" src="imagenes/libro16/978987847420.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">TIEMPO DE LOBOS&nbsp;</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        WILLIAMS, JEN
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro17.html"><img class="foto" src="imagenes/libro17/978607569183.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">DIEZ DROGAS</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        HAGER, THOMAS
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro18.html"><img class="foto" src="imagenes/libro18/978607453754.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">EL FANTASMA DE LA ÓPERA</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        GASTON, LEROUX
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro19.html"><img class="foto" src="imagenes/libro19/978607746029.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">LLAMADA DEL AGUA, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE VERDE
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro20.html"><img class="foto" src="imagenes/libro20/978607746409.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">SUEÑOS DE BICICLETA (COL. ALANDAR COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        ARCE, ARTURO
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro21.html"><img class="foto" src="imagenes/libro21/978607077989.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">TRIPTOFANITO</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        FRENK, JULIO
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro22.html"><img class="foto" src="imagenes/libro22/978607381184.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">EL CASO DEL ABANICO ROSA</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SPRINGER, NANCY
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro23.html"><img class="foto" src="imagenes/libro23/978849111768.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">NUTRICIÓN AYURVÉDICA</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        JOYTHIMAYANANDA
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro24.html"><img class="foto" src="imagenes/libro24/978607569193.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">MUNDO CONSUMO</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        BAUMAN, ZYGMUNT
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro25.html"><img class="foto" src="imagenes/libro25/978607746472.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">CYGNUS (COL. ALANDAR COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        ALVAHUANTE, CARLOS
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro26.html"><img class="foto" src="imagenes/libro26/978849145478.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">EL NONICORNIO</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        KLING, MARC-UWE
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="libros/libro27.html"><img class="foto" src="imagenes/libro27/978607550805.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">LA CANCIÓN DE AQUILES</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        MILLER, MADELINE
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+
+
+
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+<footer class="col-md-4 col-md-offset-5">Copyright 2022 © Libros y mas libros</footer>
+<div><br> <br><br> <br></div>
+<script type="text/javascript">
+    var rutaHtml = "";
+    var paginaActual = "index.html";
+    var paramMoneda = "$|I|2|.|,|";
+    var totalArticulosCesta = 0;
+    var slider = 1;
+    var carrusel = 1;
+    var tipo_carrusel = 2;
+    var autocomplete = 1;
+    var analytics = "UA-41893100-1";
+    var afiliado = "";
+
+    var aceptar = "Aceptar";
+    var verCesta = "Ver carrito";
+    var artInsCestaOK = "Se ha aÃ±adido correctamente el articulo al carrito de compras.";
+    var verTodos = "Ver todos";
+    var introPalBusqueda = "Introduce las palabras de b&uacute;squeda";
+</script>
+
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.pnotify.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-labelauty.js"></script>
+
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+<script type="text/javascript" src="cluetip/jquery.cluetip.min.js" ></script>
+
+
+<script type="text/javascript" src="js/check.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/lightslider.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/metronic.min.js"></script>
+<script type="text/javascript" src="js/typeahead/handlebars.min.js"></script>
+<script type="text/javascript" src="js/typeahead/typeahead.bundle.min.js"></script>
+
 
 </body>
+
 </html>
+

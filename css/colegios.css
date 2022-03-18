@@ -1,0 +1,367 @@
+/* Modulo libros de texto 
+*********************************************************/
+ul.libros_texto{
+	display: block;
+	clear: both;
+	padding: 0;
+	color: #333;
+	font-size: 14px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+	margin: 0;
+	background: #EFEFEF;
+	overflow: hidden;
+}
+ul.libros_texto li {
+    background: #efefef url("../libros_de_texto/smarty/images/bg_pasosTexto2.png") no-repeat scroll left center;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.1em;
+	padding: 18px 0 18px 48px;
+    position: relative;
+	width: 33.3%;
+}
+ul.libros_texto li.first{
+	background: transparent;
+}
+ul.libros_texto li.next::after {
+    border-color: transparent transparent transparent #276FB6;
+    border-style: solid;
+    border-width: 28px 0 28px 14px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+ul.libros_texto li.select{
+	color: #FFF;
+	background: #0d7ddd none repeat scroll 0 0;
+}
+ul.libros_texto li.select::after {
+    border-color: transparent transparent transparent #EFEFEF;
+    border-style: solid;
+    border-width: 28px 0 28px 14px;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+ul.libros_texto li:first-child {
+    background-image: none;
+}
+ul.libros_texto li:first-child.select::after,
+ul.libros_texto li:first-child.next::after {
+	border: none;
+}
+ul.libros_texto li span {
+    color: #0d7ddd;
+    font-size: 20px;
+    font-weight: bold;
+    left: 26px;
+    line-height: 1em;
+    position: absolute;
+    top: 17px;
+}
+ul.libros_texto li.select span{
+    color: #87bfef;
+}
+ul.libros_texto li.past span{
+	color:#666;
+}
+.colegios{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	padding: 30px 22px 22px;
+	background-color: #F8F8F8;
+}
+.colegios h3{
+	color: #000;
+	font-size: 1.3em;
+	display: block;
+	clear: both;
+	margin: 0 0 10px 10px;
+}
+.colegios h3.proceso a {
+	 color: #0099FF;
+}
+.colegios h4{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	text-transform: uppercase; 
+	color: #000;
+	font-size: 1em;
+	background:#E2E2E2;
+	padding: 10px 20px 10px 14px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius:  4px;
+	border-radius:  4px 4px;
+}
+.colegios .content{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	background:#FFF;
+	margin: 10px 0;
+	padding: 20px 25px;
+}
+.colegios select{
+	text-transform: uppercase; 
+	color: #666;
+	padding: 5px;
+	width: 100%;
+	font-size: 12px;
+    margin: 0 0 8px 6px;
+}
+ul#cursos{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	margin: 10px 0 0 0;
+}
+ul#cursos li{
+	display: block;
+	clear: both;
+	overflow: hidden;
+}
+ul#cursos li a{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	text-decoration: none;
+	font-size: 0.9em;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding:10px 15px;
+	margin-bottom:2px;
+}
+ul#cursos li a:hover{
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.colegios table thead th {
+    background-color: #0d7ddd;
+    color: #fff;
+    font-size: 11.5px;
+    padding: 11px 20px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.colegios table td{ 
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	line-height: 1.2em;
+}
+.colegios table.basket_items td{ 
+	border-bottom: 1px solid #CCC;
+	border-top: 1px solid #CCC;	
+	background:#FFF;
+}	
+.colegios table.basket_items td.product{
+		padding-left:20px;
+}
+.colegios table td.portada_lib,
+.colegios table td.portada_lib img{
+	width: 100px;
+}
+.colegios table td.titulo{
+	padding-left: 10px;
+	font-size: 0.8em; 
+}
+.colegios table td.titulo h5{
+    font-size: 13px;
+    line-height: 1.4em;
+	font-weight:bold;
+	color: #000;
+	margin: 0;
+}
+.colegios table td.titulo p, .colegios table td.titulo .editorial {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.4em;
+    margin: 1px 0 0;
+}
+.colegios table td.titulo .ean {
+	color: #666;
+	font-size: 11px;
+}
+.colegios table td.precio,.colegios .grupo_datos .totalPedido, .colegios td.total, .colegios #totalPedido{
+    color: #F78100;
+}
+.colegios table td.precio.rebajado{
+	width:100px;
+}
+.colegios table td.precio .valores{
+	width:50px;
+	float:left;
+}
+.colegios table td.precio span.descuento{
+	color: #FFF;
+	font-size:1em;
+	-webkit-border-radius: 40px;
+    -moz-border-radius:  40px;
+    border-radius: 40px;
+	padding:7px 3px;
+	margin-left:0;
+	background-color: #ff3300;
+	background-image: -moz-linear-gradient(top , #FF3300, #CF142B 29px); 
+	background-image: -webkit-linear-gradient(top , #FF3300, #CF142B 29px); 
+	background-image: -o-linear-gradient(top , #FF3300, #CF142B 29px); 
+	background-image: -ms-linear-gradient(top , #FF3300, #CF142B 29px); 
+	background-image: linear-gradient(top , #FF3300, #CF142B 29px);
+	border:2px solid #FFFFFF;
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.50);
+	position:relative;
+	float:left;
+}
+.colegios table td.precio strike{
+	color: #666;
+}
+.colegios table td.cantidad{
+	text-align: center;
+}
+.colegios table td.cantidad input {
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    padding: 7px;
+    text-align: center;
+}
+.colegios td.quantity input{
+	display: block;
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+}
+.colegios td.quantity a{
+	float:left;
+}
+.colegios td.precio{
+	text-align: left;
+	padding-left: 20px;
+	font-size: 14px;
+}
+.colegios table tr.alternative td{ 
+	background: rgba(255, 255, 255, 0.85) none repeat scroll 0 0;
+	border-top: 1px solid #E1E1E1; 
+	border-bottom: 1px solid #E1E1E1;
+}
+.colegios table tr,
+.colegios table tr td{ 
+	border: none !important;
+}
+.colegios table td.product a {
+    color: #000;
+}
+td.quantity a {
+   line-height:1.2em;
+}
+.colegios .gastosenvio{
+	width: 720px;
+	background: #E5E5E5;
+}
+.colegios ul.proceso_compra {
+	margin: 30px 0 0 0;
+	height:20px;
+	padding: 16px 0 8px 0; 
+	border: 1px solid #CCC;
+	background: transparent;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.colegios ul.proceso_compra li{
+	width: 21%;
+	float:left; 
+	height:auto;
+	padding:0 0 0 15px;
+	margin:0 10px 0 0; 
+	font-size:0.9em;
+	color:#666;
+}
+.colegios ul.proceso_compra li.first{margin-left:9px;}
+.colegios ul.proceso_compra li.select{
+	color:#000;
+	font-weight:bold;
+}
+.colegios .formNormal,.colegios .info2  {
+	padding: 40px 0 0 0;
+}
+.colegios .info2 form label{
+	text-transform:none;
+}
+.colegios .info2 a{
+	margin-right:90px;
+}
+.colegios label.labelenvio, .colegios label.labelpago{ 
+	font-size:0.8em
+}
+.colegios .formaenvio select, .colegios .formapago select{
+	 height:18px;
+	 font-size:0.9em;
+	 padding:0;
+	 text-transform:none;
+}
+.colegios .field{
+	clear: both;
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    width: 95%;
+}
+.colegios .field input, .colegios .field select{
+    width: 300px;
+}
+.colegios .field input.check{
+	width:20px;
+	background:transparent;
+	border:0;
+}
+.colegios .field select{
+    width: 311px;
+}
+.colegios .info,.colegios .success,.colegios .warning,.colegios .error,.colegios .validation{
+	width: 710px;
+}
+.colegios .info p, .colegios .success p, .colegios .warning p, .colegios .error p, .colegios .validation p{
+	width: 600px;
+}
+ul#provincias, ul#centros{
+	display:none;
+}
+.colegios .btn span.icon-angle-right {
+    font-size: 12px;
+    margin-left: 3px;
+    margin-right: -2px;
+}
+.colegios .btn span.icon-angle-left {
+    font-size: 12px;
+    margin-left: -3px;
+    margin-right: 7px;
+}
+.colegios .btn{
+	margin: 20px 6px 0 0;
+    padding: 4px 10px;
+	border-radius: 4px;
+}
+.colegios .btn span {
+    font-size: 12px;
+    margin-left: 3px;
+    margin-right: -2px;
+}
+.colegios .bottom_table {
+    margin-right: 7px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
