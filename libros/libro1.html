@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <div><br> <br><br> <br></div>
-    <h1 class="text-center text-uppercase"><strong><a href="index.html">Tienda de Libros</a></strong></h1>
-    <title>1984</title>
+    <title>Tienda de Libros</title>
+    <meta charset="iso-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-    <link rel="image_src" href="../imagenes/9786073/978607316561.jpg" />
-    <meta property="og:type" content="product"/>
-    <meta property="og:image" content="../imagenes/9786073/978607316561.jpg"/>
-    <meta property="og:url" content="libro\psicoanalista.html"/>
+
+    <meta name="description" content="Tienda de libros"/>
+    <meta name="keywords" content="" />
+    <meta name="revisit" content="15 days" />
+    <meta name="revisit-after" content="1 days" />
+
+
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="libro\psicoanalista.html" />
 
-    <link rel="stylesheet" type="text/css" href="../css/font/font-awesome.css" />
-    <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css" />
-    <link rel="stylesheet" type="text/css" href="../css/jquery.ui.dialog.css" />
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="../css/jquery-labelauty.css" />
-    <link rel="stylesheet" type="text/css" href="../css/lightslider.css" />
-    <link rel="stylesheet" type="text/css" href="../css/rawline.css" />
-    <link rel="stylesheet" type="text/css" href="../css/maineccb.css?3" />
-    <link rel="stylesheet" type="text/css" href="../css/colegios.css" />
-    <link rel="stylesheet" type="text/css" href="../css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="../lightbox/css/lightbox.css" />
-    <link rel="stylesheet" type="text/css" href="../js/typeahead/typeahead.css" />
-    <link type="image/x-icon" rel="shortcut icon" href="../images/favicon.ico">
 
-    <script type="text/javascript" src="../js/instafeed.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/font/font-awesome.css" />
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.ui.dialog.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-labelauty.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css" />
+    <link rel="stylesheet" type="text/css" href="css/rawline.css" />
+    <link rel="stylesheet" type="text/css" href="css/maineccb.css?3" />
+    <link rel="stylesheet" type="text/css" href="css/colegios.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="cluetip/jquery.cluetip.css" />
+    <link rel="stylesheet" type="text/css" href="js/typeahead/typeahead.css" />
+    <link type="image/x-icon" rel="shortcut icon" href="images/favicon.ico">
+
     <script type="text/javascript" src="../js/funciones.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
 
-    <!-- Agregamos la librería jQuery (Importante)-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- Agregamos la librería Simple Cart (recuerda apuntar a la librería Simple Cart)-->
-    <script src="js/simpleCart.min.js"></script>
-    <!-- Código JS de inicialización  -->
-    <script>
-
-        $(document).ready(function($) {
-            /* Función jQuery para el evento clic en la etiqueta "x" con la clase (.carrito-total)*/
-            $('.carrito-total').click(function() {
-                //Mostrar los items del carrito
-                $('.bolsa').slideToggle();
-            });
-
-        });
-    </script>
-
-
-
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
 </head>
 
-<body class="page-detalle">
+<body class="page-index" onload="" itemscope itemtype="https://schema.org/WebPage" >
+<div><br> <br><br> <br></div>
+<h1 class="text-center text-uppercase"><strong><a href="index.html"><img src="imagenes/logo-02.png" width="120" height="91" alt="" class=""></a><a href="index.html">Tienda de Libros</a></strong></h1>
+<!--$Buscador-->
 <header id="header">
     <div class="header-bottom">
         <div class="header-middle">
             <div class="container">
                 <div class="row">
-                    <div id="search" class="col-md-6">
+
+                    <div id="search" class="col-md-5 col-md-offset-2">
                         <form id="busqueda">
                             <input type="hidden" name="tipoBus" id="tipoBus" value="full" />
-                            <input id="autocompleta" class="search-text" type="text" name="palabrasBusqueda" placeholder="Titulo, Autor"/>
-                            <button class="btntwo search" title="Buscar"><i class="fa fa-search"></i></button>
+                            <input id="autocompleta" class="search-text" type="text" name="palabrasBusqueda" placeholder="Título del libro, Autor, SKU..."/>
+                            <button onclick="search()" class="btntwo search" title="Buscar" type="submit"><i class="fa fa-search"></i></button>
                         </form>
                     </div>
                 </div>
@@ -75,86 +61,1188 @@
             <div class="container">
                 <nav class="navbar navbar-default" role="navigation">
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                        <p class="carrito-total"> <span id="amount" class="simpleCart_quantity">0</span> item(s) $<span id="price" class="simpleCart_total">0.00</span> </p>
-                        <div class="bolsa">
-                            <div class="simpleCart_items"></div>
-                            <div class="opciones">
-                                <a class="boton simpleCart_empty" onclick="vaciarCarrito()" href="javascript:void(0)">Vaciar carrito</a>
-                                <a class="boton simpleCart_checkout" href="../Formulario_de_Eventos_y_Servicios_Bancarios_Directos.html" target="_blank">Checkout</a>
-                            </div>
-                        </div>
                         <ul class="nav navbar-nav">
-                            <li ><a href="../index.html"><span>Inicio</span></a></li>
-                        </ul>
+                            <li ><a href="index.html"><span>Inicio</span></a></li>
+
+                            <li class="dropdown">
+                                <a class="hidden-xs" href="home_libros.html" class="dropdown-toggle" data-toggle="dropdown">Categorías <b class="caret"></b></a>
+                                <a class="visible-xs" href="home_libros.html">Categorías</a>
+                                <ul class="dropdown-menu dropdown-menu-cabecera">
+                                    <ul class="menu-explorar">
+                                        <ul class="menu-materias">
+
+                                            <li >
+                                                <a href="#" title="Licenciatura y Novelas">Licenciatura y Novelas</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Arte">Arte</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Arquitectura">Arquitectura</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Cine">Cine</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Fotografía">Fotografía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Novela Gráfica">Novela Gráfica</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Cuerpo, Alma y Espíritu">Cuerpo, Alma y Espíritu</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Salud y Ejercicio">Salud y Ejercicio</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Negocios y Finanzas">Negocios y Finanzas</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ciencia y Naturaleza">Ciencia y Naturaleza</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Derecho">Derecho</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Algebra">Algebra</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Psicología">Psicología</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Filosofía">Filosofía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ingeniería y Tecnología">Ingeniería y Tecnología</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Lenguaje y Referencia">Lenguaje y Referencia</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Viajes">Viajes</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Gatronomía">Gatronomía</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Niños y Jóvenes">Niños y Jóvenes</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Lo de hoy">Lo de hoy</a>
+                                            </li>
+                                            <li >
+                                                <a href="#" title="Ellas escriben su historia">Ellas escriben su historia</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </ul>
+                                    </li>
+                                </ul>
                     </div>
-                </nav>
             </div>
         </div>
     </div>
+    </div>
 </header>
+
 
 <div class="container main-container">
     <div class="row">
         <div class="content col-md-12">
-            <div itemscope="" >
-                <div class="fichaDetalle">
-                    <div id="detimg">
-                        <img itemprop="image" id="detportada" src="../imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="1984" alt="1984" />
-                        <div class="wraper_idm"></div>
-                        <div class="wraper_ebook"></div>
-                    </div>
+            <div class="carrusel-wrapper">
+                <ul id="lightSlider" class="lightSlider listado_libros books three-cols">
+                    <li>
 
-                    <dl class="summary">
-                        <h1 itemprop="name">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</h1>
-                        <p itemprop="author" id="autor">SERIE AZUL</p>
-                        <dt>Categoría&nbsp;</dt>
-                        <dd  class="editorial">Libros para Todos</dd>
+                        <div class="portada">
 
-                        <dt>Editorial:</dt>
-                        <dd itemprop="isbn" class="number">EDELVIVES (ESPAÑA)</dd>
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
 
-                        <dt>SKU:</dt>
-                        <dd itemprop="bookFormat">00001</dd>
-                    </dl>
-                </div>
-
-                <div class="price-col">
-                    <div itemscope="" itemprop="offers" class="precioDetalle">
-                        <div class="wraper-precioDetalle">
-                            <div class="infoprices">
-                                <span class="despues" itemprop="price">$107.67</span>
-                            </div>
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
                         </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
 
-                        <a id="botonComprar" onclick="buy()" class="btn buy" title="Anadir  al carrito de compras">Anadir al carrito <span class="icon icon-basket"></span></a>
-                    </div>
-                </div>
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
 
-                <div id="detpestanias">
-                    <ul id="detnavtab">
-                        <li><a href="#tabsinopsis">Sinopsis</a></li>
-                    </ul>
-                    <div class="clear"></div>
-
-                    <div id="tabsinopsis" >
-                        <p itemprop="description" class="bodytext">Si nadie ha visto el amor, ¿cómo saber si existe? No te rías, es una pregunta seria. Se supone que eso mantiene unidas a las parejas y a las familias, ¿no? Bruno ignoraba si la relación de sus padres estaba en un buen momento o peligraba, así que dedicó horas de observación a averiguar qué es el amor y cómo se ve. Tal vez su descubrimiento te resulte útil...
-
-                        </p>
-                    </div>
-                </div>
-
-                <!-- PENDIENTE -->
-                <div class="otrosautor">
-                    <h2 class="title">Libros que te pueden interesar</h2>
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
 
 
-                    <!-- PENDIENTE -->            </div>
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="PAQUETE JOHN BOYNE                        (2 VOLUMENES)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+                    <li>
+
+                        <div class="portada">
+
+                            <a href="index.html"><img class="foto" src="imagenes/INVESTIGACION, LA (ALA DELTA COLIBRÍ)/978607746791.jpg" title="INVESTIGACION, LA (ALA DELTA COLIBRÍ)" alt="INVESTIGACION, LA (ALA DELTA COLIBR&Iacute;)" border="0"/></a>
+
+                            <div class="wraper_idm"></div>
+                            <div class="wraper_ebook"></div>
+                        </div>
+                        <form>
+                            <dl class="dublincore">
+                                <dt class="oculta">Titulo del libro</dt>
+
+                                <dd class="title"><a href="#">INVESTIGACION, LA (ALA DELTA COLIBRÍ)</a></dd>
+
+                                <dt class="oculta"></dt>
+                                <dd class="creator">                        SERIE AZUL
+
+
+
+                                </dd>
+
+                                <dt class="oculta"></dt>
+
+
+                                <dd class="disponibilidad green">En stock</dd>
+
+                            </dl>
+                            <div class="botones">
+                                <p class="precio">
+                                    $300.00
+                                </p>
+                            </div>
+                        </form>	                </li>
+
+
+
+
+                </ul>
             </div>
 
-        </div><!--cierre del div primary -->
-    </div><!--cierre del row -->
-</div><!--cierre del primer div container -->
+
+
+
+        </div>
+    </div>
+</div>
+<footer class="col-md-4 col-md-offset-5">Copyright 2022 © Libros y más libros</footer>
+<script type="text/javascript">
+    var rutaHtml = "";
+    var paginaActual = "index.html";
+    var paramMoneda = "$|I|2|.|,|";
+    var totalArticulosCesta = 0;
+    var slider = 1;
+    var carrusel = 1;
+    var tipo_carrusel = 2;
+    var autocomplete = 1;
+    var analytics = "UA-41893100-1";
+    var afiliado = "";
+
+    var aceptar = "Aceptar";
+    var verCesta = "Ver carrito";
+    var artInsCestaOK = "Se ha aÃ±adido correctamente el articulo al carrito de compras.";
+    var verTodos = "Ver todos";
+    var introPalBusqueda = "Introduce las palabras de b&uacute;squeda";
+</script>
+
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.pnotify.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-labelauty.js"></script>
+
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+<script type="text/javascript" src="cluetip/jquery.cluetip.min.js" ></script>
+
+
+<script type="text/javascript" src="js/check.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/lightslider.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/metronic.min.js"></script>
+<script type="text/javascript" src="js/typeahead/handlebars.min.js"></script>
+<script type="text/javascript" src="js/typeahead/typeahead.bundle.min.js"></script>
+
 
 </body>
+
 </html>
 
